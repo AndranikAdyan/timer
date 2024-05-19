@@ -24,5 +24,3 @@ if checker(user_input):
 			print_time(times)
 			break
 	print("Time is up!!!")
-else:
-    print("Bad Input!")
