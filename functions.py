@@ -14,11 +14,11 @@ def checker(user_input: str) -> bool:
 		print("Invalid time entry: 'seconds' or 'minutes' should not exceed 60.")
 		return False
 
-	if len(times["second"]) > 2 or len(times["minute"] > 2):
+	if len(times["second"]) > 2 or len(times["minute"]) > 2:
 		print("The number of digits in 'seconds' or 'minutes' should not exceed 2.")
 		return False
 
 	return True
 
 def print_time(times):
-    print(f"{times['hour'].zfill(2)}:{times['minute'].zfill(2)}:{times['second'].zfill(2)}")
+	print(f"{times['hour'].zfill(2)}:{times['minute'].zfill(2)}:{times['second'].zfill(2)}")
